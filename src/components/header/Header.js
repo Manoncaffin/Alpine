@@ -1,0 +1,1 @@
+// Composants liés à l'en-tête de l'application

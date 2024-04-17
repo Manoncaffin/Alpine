@@ -1,0 +1,1 @@
+// Composant pour le résumé tarifaire

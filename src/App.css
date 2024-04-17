@@ -1,38 +1,285 @@
-.App {
-  text-align: center;
+/* ---- HEADER ---- */
+body,
+html {
+  font-family: "Exo";
+  color: black;
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 10vmin;
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.App-header {
+  background-color: #e7e6e6;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  font-size: 1.5rem;
+  color: black;
+}
+
+.App-navbar {
+  width: 100%;
+  display: flex;
+  align-items: end;
+  justify-content: space-around;
+}
+
+.App-nav-links {
+  list-style: none;
+  display: flex;
+  padding: 0;
+}
+
+.App-nav-links li {
+  margin-right: 50px;
+}
+
+.App-nav-links li a {
+  text-decoration: none;
+  color: black;
+}
+
+/* ---- HEADER ---- */
+
+
+
+/* ---- SECTION TWO ---- */
+.part_one {
+  height: 100vh;
+}
+
+/* ---- SECTION TWO ---- */
+
+
+
+/* ---- SECTION TWO ---- */
+.part_two {
+  height: 100vh;
+}
+
+.content {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  text-align: center;
+  color: black;
+  font-weight: 600;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  position: relative;
+  width: fit-content;
+}
+
+.title-image-one,
+.title-image-two {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.title-image-one {
+  top: 30%;
+  left: 20%;
+}
+
+.title-image-two {
+  top: 30%;
+  left: 60%;
+}
+
+.alpineVintage,
+.alpineEvolution {
+  margin-top: 60px;
+  width: 35%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.alpineVintage:hover,
+.alpineEvolution:hover {
+  opacity: 1;
+  -webkit-animation: flash 1.5s;
+  animation: flash 1.5s;
+}
+
+@-webkit-keyframes flash {
+  0% {
+    opacity: .4;
+  }
+
+  100% {
+    opacity: 1;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+@keyframes flash {
+  0% {
+    opacity: .4;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+/* ---- SECTION TWO ---- */
+
+
+
+/* ---- SECTION THREE ---- */
+.part_three {
+  height: 100vh;
+  text-align: center;
+}
+
+span {
+  color: blue;
+}
+
+h3 {
+  border: 1px solid white;
+  padding: 10px;
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.alpine {
+  margin: 20px 220px 20px 220px;
+  width: 73%;
+  height: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.text-overlay {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, 130%);
+  text-align: center;
+  color: white;
+}
+
+.text-overlay a {
+  color: white;
+  text-decoration: none;
+}
+
+/* ---- SECTION THREE ---- */
+
+
+
+/* ---- SECTION FOUR ---- */
+.part_four {
+  height: 100vh;
+  padding: 50px 220px 100px 220px;
+}
+
+.description {
+display: flex;
+justify-content: start;
+flex-direction: column;
+}
+/* ---- SECTION FOUR ---- */
+
+
+
+/* ---- SECTION FIVE ---- */
+.part_five {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  padding: 50px 220px 100px 220px;
+  transform: translate(40%);
+}
+
+/* .structure-img {
+}
+
+.structureImageOne,
+.structureImageTwo {
+} */
+
+.content-structure {
+  margin-top: 20px;
+  width: 40%;
+}
+/* ---- SECTION FIVE ---- */
+
+
+
+/* ---- SECTION SIX ---- */
+.part_six {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  text-align: end;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  padding: 50px 220px 100px 220px;
+}
+
+.content-mechanic {
+  width: 50%;
+  text-align: end;
+}
+/* ---- SECTION SIX ---- */
+
+
+
+/* ---- SECTION FOOTER ---- */
+.footer {
+  padding: 50px 220px 100px 220px;
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: white;
+  position: relative;
+
+  p {
+  font-weight: 600;
+}
+}
+
+.customer-service,
+.other-site,
+.career,
+.links {
+  display: flex;
+  flex-direction: column;
+  line-height: 2.5rem;
+
+  a {
+    text-decoration: none;
+    color: white;
   }
 }
+
+.logoFooter {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-10%, -50%);
+}
+
+.logoFooter-img {
+  margin-top: 20px;
+  width: 20%;
+  height: auto;
+}
+
+/* ---- SECTION FOOTER ---- */
